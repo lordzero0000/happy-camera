@@ -1,0 +1,23 @@
+{
+  "name": "happy-camera",
+  "version": "0.1.0",
+  "description": "Let's show your emotion in pictures!",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lordzero0000/happy-camera.git"
+  },
+  "author": "Dio Brando",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lordzero0000/happy-camera/issues"
+  },
+  "homepage": "https://github.com/lordzero0000/happy-camera#readme"
+}
