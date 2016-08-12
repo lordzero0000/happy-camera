@@ -9,19 +9,17 @@
   <body>
     <script src="webcamjs/webcam.js"></script>
     <div id="my_camera" style="width:320px; height:240px;"></div>
-    <div id="my_result"></div>
+    <div id="my_emotion"></div>
     <script language="JavaScript">
-      function takePicture() {
+      var takePicture = () => {
         Webcam.snap( function(data_uri) {
-          document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/>';
-          //getEmotion(data_uri);
-          uploadImage(data_uri);
+          getEmotion(data_uri, getURLParameter('token'));
         });
-      }
+      };
 
       (function() {
         Webcam.attach( '#my_camera' );
-        window.setInterval(takePicture, 1000);
+        window.setInterval(takePicture, 3000);
       })();
     </script>
     </body>
